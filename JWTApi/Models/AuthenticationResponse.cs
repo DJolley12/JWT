@@ -16,5 +16,6 @@ namespace JWTApi.Domain
             Username = user.Username;
             Token = token;
         }
+
     }
 }

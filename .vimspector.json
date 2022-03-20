@@ -1,0 +1,15 @@
+{
+    "configurations": {
+        "launch - netcoredbg": {
+            "adapter": "netcoredbg",
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/JWTApi/bin/Debug/net5.0/JWTApi.dll"
+                "args": [],
+                "stopAtEntry": true
+                "cwd": "${workspaceRoot}",
+                "env": {}
+            }
+        }
+    }
+}

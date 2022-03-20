@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using JWTApi.Domain;
 using JWTApi.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -20,12 +21,7 @@ namespace JWTApi.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            throw new NotImplementedException();
-        }
-
+        [AllowAnonymous]
         [HttpPost("authenticate")]
         public IActionResult Authenticate(AuthenticationRequest authReq)
         {
